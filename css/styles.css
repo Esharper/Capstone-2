@@ -2,10 +2,13 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #02000a;
   }
   
   h1 {
-    background-color: #333;
+    background-color: #02000a;
+    
+    
 }
 
 header {
@@ -15,6 +18,7 @@ header {
 
 main {
     padding: 20px;
+   
 }
 
 #movie-grid {
@@ -32,8 +36,8 @@ p {
 .movie-card {
   margin: 20px;
   width: 300px;
-  background-color: #444;
-  color: #fff;
+  background-color: #444444;
+  color: #ffffff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -52,7 +56,7 @@ p {
 
 .movie-card p {
   font-size: 16px;
-  color: #ccc;
+  color: #0ef240;
 }
 
   .flip-card {
@@ -60,6 +64,7 @@ p {
     width: 300px;
     height: 300px;
     perspective: 1000px;
+    margin: 30px;
   }
   
   .flip-card-inner {
@@ -86,7 +91,7 @@ p {
   
   .flip-card-front {
     background-color: #bbb;
-    color: black;
+    color: rgb(250, 247, 247);
   }
   
   .flip-card-back {
