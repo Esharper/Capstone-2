@@ -8,11 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const apiUrl = `https://api.amctheatres.com/v1/theatres/42/v2/movies?api-key=${apiKey}&language=en-US`;
 
     fetch(apiUrl)
-        .then(response => {
-            if (!response.ok) {
+        .then(res => {
+            if (!res.ok) {
                 throw new Error('Network response was not ok ' + response.statusText);
             }
-            return response.json();
+            return res.json();
         })
         .then(data => {
             displayMovies(data);
