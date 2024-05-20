@@ -4,8 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <style src="css/styles.css"></style>
+    <link rel="stylesheet" href="img/friday poster.jpg">
 </head>
-<body>
+<body >
+    <header>
     
+      <header class="bg-dark text-white">
+        <h1>AMC Action Movies</h1>
+    </header>
+    <main class="container">
+        <section class="row">
+            <div class="col-md-12">
+                <input type="text" id="search-input" placeholder="Search for a movie...">
+                <button id="search-btn">Search</button>
+            </div>
+        </section>
+    <div class="container"></div>
+        <section class="row" id="movie-grid">
+            <!-- Movie cards will be rendered here -->
+            <p>
+
+<h1 class="bg-dark text-white">Friday (1995)</h1>
+<h3 class="bg-dark text-white">Chris Tucker, Ice Cbe, and Bernie Mac</h3>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="data:image/jpeg;base64,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" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>John Witherspoon</h1> 
+      <p>Craig & Smokey</p> 
+      <p>It's Friday and Craig and Smokey must come up with $200 they owe a local bully or there won't be a Saturday.</p>
+      <P a href="https://www.amctheatres.com/movies/friday-1493" class="btn btn-primary stretched-link">See Movie</P>
+    </div>
+  </div>
+</div>
+
+<!-- second card -->
+<h1 class="bg-dark text-white">Harlem Nights</h1>
+<h3 class="bg-dark text-white">Richard Pryor, Eddie Murphy, Red Foxx and more...</h3>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://m.media-amazon.com/images/I/513DRFQM29L._AC_UF1000,1000_QL80_.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Eddie Murphy</h1> 
+      <p>Sugar Ray, Quick, and Bennie</p> 
+      <p>During the 1930's, a New York illegal Gambling house owner and his associates must deal with strong competitionm, gangsters, and corrupt cops in order to stay in business.</p>
+      <P a href="https://www.amctheatres.com/movies/harlem-nights-3902" class="btn btn-primary stretched-link">See Movie</P>
+    </div>
+  </div>
+</div>
+
+</header>
+    <script src="js/app.js"></script>
 </body>
 </html>
